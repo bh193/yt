@@ -31,12 +31,16 @@ body{
 }
 header{
   height: 55px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(31, 31, 31);
   font-weight: bold;
   padding: 10px 25px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
 }
 
 header img{
@@ -52,14 +56,15 @@ header img{
 }
 .menu span{
   position: relative;
+  font-family: ;
 }
 .menu span::after{
   content: "TW";
   color: rgb(210, 210, 210);
   position: absolute;
-  font-size: 8px;
+  font-size: 12px;
   right: -23px;
-  top: 0;
+  top: -4px;
 }
 .youtube{
   width: 26px;
@@ -135,7 +140,7 @@ header img{
 /* 主要 */
 
 .content{
-  margin: 40px 60px;
+  margin: 75px 60px;
   display: flex;
 }
 main{
@@ -250,6 +255,9 @@ aside{
 }
 .game img{
   width: 70px;
+}
+.game .game-detail:first-child img{
+  height: 100%;
 }
 
 .game-detail{
@@ -505,5 +513,8 @@ select{
   }
   aside{
     padding: 0;
+  }
+  .author{
+    margin: 5px 15px;
   }
 }
