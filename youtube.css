@@ -76,7 +76,7 @@ header img{
 }
 .search input{
   height: 33px;
-  width: 500px;
+  width: 40rem;
   background-color: #000;
   border: none;
 }
@@ -179,12 +179,15 @@ aside{
 .video li span{
   padding-left: 7px;
 }
-.description{
+.author{
   display: flex;
   padding: 20px 0;
   margin: 5px 0;
-  border-bottom: 1px solid rgb(69, 69, 69);
   border-top: 1px solid rgb(69, 69, 69);
+  justify-content: space-between;
+}
+.author-main{
+  display: flex;
 }
 .author-name{
   display: flex;
@@ -230,10 +233,20 @@ aside{
   color: #fff;
   border: none;
 }
+.detail{
+  padding: 0 4.5rem;
+}
+.detail a{
+  color: #3da6ff;
+}
+.info{
+  border-bottom: 1px solid rgb(69, 69, 69);
+}
 .game{
   display: flex;
   padding: 20px 0;
   justify-content: space-between;
+  margin-left: 4.5rem;
 }
 .game img{
   width: 70px;
@@ -428,4 +441,69 @@ select{
   color: #ff4e45;
   width: 45px;
   text-align: center;
+}
+
+@media (max-width:1200px){
+  .content{
+    display: block;
+  }
+  .search input {
+    width: 30rem;
+  } 
+  main{
+    width: 100%;
+  }
+  aside{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px){
+  .search input {
+      width: 20rem;
+  }
+  main{
+    border-bottom: 4px solid rgb(69, 69, 69);
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 800px){
+  header{
+    display: none;
+  }
+  .content{
+    margin: 0;
+  }
+  .video-description, #video-hash-tag, .video-title, .comment{
+    display: block;
+    margin: 0 15px;
+  }
+  .video-options{
+    padding: 15px 0;
+    justify-content: space-between;
+  }
+  .game, .info{
+    margin: 0 15px;
+  }
+  .detail {
+    padding: 0px 3.5rem;
+  }
+  .thumbnail{
+    display: block;
+    height: 100%;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 210px;
+  } 
+  .thumbnail-info{
+    padding: 0.5rem 1rem 1rem 1rem;
+    font-size: 14px;
+  }
+  .time{
+    display: none;
+  }
+  aside{
+    padding: 0;
+  }
 }
