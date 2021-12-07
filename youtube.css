@@ -255,9 +255,9 @@ aside{
 .game img{
   width: 70px;
 }
-.game .game-detail:first-child img{
+/* .game .game-detail:first-child img{
   height: 100%;
-}
+} */
 
 .game-detail{
   display: flex;
@@ -515,5 +515,8 @@ select{
   }
   .author{
     margin: 5px 15px;
+  }
+  .video li{
+    padding: 0;
   }
 }
