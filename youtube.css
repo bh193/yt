@@ -56,7 +56,6 @@ header img{
 }
 .menu span{
   position: relative;
-  font-family: ;
 }
 .menu span::after{
   content: "TW";
